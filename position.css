@@ -1,0 +1,279 @@
+
+/* Styles généraux de la page */
+.slide {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    }
+    
+    .main-content {
+    background-color: #ffffff;
+    overflow: hidden;
+    
+      width: 100%;
+      max-width: 1920px;
+    position: relative;
+    }
+    
+   /* Styles de l'en-tête */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ff5100;
+    background-color:#ff5100 ;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .main-nav li {
+    margin-right: 20px;
+  }
+  
+  .main-nav a {
+    font-family: "Aznauri Square", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .main-nav a.active {
+    color: #632305;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-form input {
+    width: 350px;
+    height: 45px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: #d9d9d9;
+  }
+  
+  .search-form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .user-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .notification-btn {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .notification-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff5100;
+    color: #ffffff;
+    font-size: 18px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .account-link {
+    margin-left: 20px;
+  }
+
+
+
+  .modal {
+    position: absolute;
+    right: 0;
+    margin-top: 8px;
+    width: 12rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  .modal-item {
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .modal-item:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+    
+      
+    
+    /* Styles du pied de page */
+    .main-footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 0;
+    }
+    
+    .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+    
+    .contact-info {
+    font-family: "Aznauri Square", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    }
+    
+    .footer-description {
+    font-family: "Aznauri Square", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 800px;
+    text-align: right;
+    }
+    
+  
+    @media (max-width: 1024px) {  
+      .hero {  
+        flex-direction: column;  
+        align-items: center;  
+        text-align: center;  
+      }  
+    
+      .hero-image {  
+        position: static;  
+        width: 100%;  
+        max-width: 500px;  
+        margin-top: 150px;  
+       margin-bottom: 250px;
+      }  
+    }
+    
+
+
+    /* Style de la section */
+.queue-status {
+    text-align: center;
+    background-color: #ff5100;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style du tableau */
+.queue-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.queue-table th, .queue-table td {
+    border: 1px solid #fff;
+    padding: 12px;
+    font-size: 18px;
+}
+
+.queue-table th {
+    background-color: #d94400;
+    font-weight: bold;
+}
+
+/* Style du bouton Actualiser */
+.refresh-btn {
+    background-color: #fff;
+    color: #ff5100;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.refresh-btn:hover {
+    background-color: #ddd;
+} 
+
+
+
+ /* Pour tous les liens cliquables */
+ a:hover {
+  color: #ff5100; /* Changer la couleur de texte */
+  text-decoration: underline; /* Ajouter un soulignement au survol */
+}
+
+/* Pour les boutons */
+.cta-button:hover {
+  background-color: #f5ab88; /* Couleur de fond au survol */
+  color: #ffffff; /* Couleur du texte au survol */
+  border-color: #632305; /* Couleur de la bordure au survol */
+}
+
+/* Pour les items du modal */
+.modal-item:hover {
+  background-color: #f0f0f0; /* Changer la couleur de fond du modal au survol */
+}
+
+/* Pour les éléments de la grid de fonctionnalités */
+.feature-box:hover,
+.feature-boxdark:hover,
+.feature-box1:hover,
+.feature-box2:hover {
+  background-color: #d8a58e; /* Changer la couleur de fond au survol */
+  color: #ffffff; /* Changer la couleur du texte */
+}
+
+/* Pour les éléments du footer */
+.main-footer a:hover {
+  color: #ff5100; /* Changer la couleur des liens du footer au survol */
+}
+
+/* Pour les éléments de la barre de navigation */
+.main-nav a:hover {
+  color: #632305; /* Changer la couleur de texte des liens de navigation au survol */
+}

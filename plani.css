@@ -1,0 +1,545 @@
+/* Styles généraux de la page */
+.slide {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  }
+  
+  .main-content {
+  background-color: #ffffff;
+  overflow: hidden;
+  
+    width: 100%;
+    max-width: 1920px;
+  position: relative;
+  }
+  
+ /* Styles de l'en-tête */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ff5100;
+  background-color:#ff5100 ;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.main-nav li {
+  margin-right: 20px;
+}
+
+.main-nav a {
+  font-family: "Aznauri Square", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-nav a.active {
+  color: #632305;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input {
+  width: 350px;
+  height: 45px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background-color: #d9d9d9;
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.notification-btn {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.notification-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff5100;
+  color: #ffffff;
+  font-size: 18px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-link {
+  margin-left: 20px;
+}
+
+
+
+
+.modal {
+  position: absolute;
+  right: 0;
+  margin-top: 8px;
+  width: 12rem;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.modal-item {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.modal-item:hover {
+  background-color: #e5e7eb;
+}
+
+.hidden {
+  display: none;
+}
+
+  
+  
+  
+/* Styles de la section héros */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 0;
+  padding-top: 0px;
+ margin-bottom: -370px;
+  }
+  
+  .hero h1 {
+  font-family: "Aznauri Square", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #ff5100;
+  font-size: 110px;
+  line-height: 1.2;
+  margin-bottom: -555px;
+  margin-left: 5%;
+  padding-right: -110%;
+  top: 35px ;
+  
+ 
+  
+
+
+  
+
+  }
+  
+  .hero h1 span {
+  display: block;
+  }
+  
+  .hero h1 .queue {
+  font-size: 80px;
+  }
+  
+  .hero h1 .manager {
+  font-size: 80px;
+  margin-top: 10px;
+  }
+  
+  .welcome-text {
+  display: block;
+  font-family: "Aznauri Square", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 50px;
+  margin-left: -2%;
+  margin-top: 50px;
+  }
+  
+  .cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ 
+  margin-bottom: -105px;
+  margin-left: 10%;
+  justify-content: center;
+  margin-top: 550px;
+  }
+  
+  .cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: "Aznauri Square", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  
+  }
+  
+  .cta-button.primary {
+  background-color: #ff5100;
+  color: #ffffff;
+  border: 2px solid #ff5100;
+  
+  }
+  
+  .cta-button.secondary {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+  }
+  
+ .hero-image {
+ right: -20%;
+  top: -350px;
+ position: relative;   
+    width: 50%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  
+
+
+  
+ 
+.appointment-form {
+  background-color: #ffbf8b;
+  border-radius: 20px;
+  padding: 40px; /* Espacement intérieur réduit */
+  width: 50%; /* Largeur contrôlée pour éviter que ça prenne toute la page */
+  max-width: 600px; /* Empêche que le formulaire devienne trop grand */
+  margin: auto; /* Centre le formulaire */
+  box-shadow: 0px -1px 15px 5px #00000026;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-family: "Aznauri Square-Bold", Helvetica;
+  font-size: 18px; /* Taille plus adaptée */
+  margin-bottom: 5px; /* Espacement réduit */
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #000000;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #ff5100;
+  color: #ffffff;
+  font-family: "Aznauri Round-Regular", Helvetica;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .appointment-form {
+      width: 90%;
+      padding: 20px;
+  }
+}
+
+
+.selection-interface {
+  background-color: #ffbf8b;
+  border-radius: 20px;
+  padding: 40px; /* Espacement intérieur réduit */
+  width: 50%; /* Largeur contrôlée pour éviter que ça prenne toute la page */
+  max-width: 600px; /* Empêche que le formulaire devienne trop grand */
+  margin: auto; /* Centre le formulaire */
+  box-shadow: 0px -1px 15px 5px #00000026;
+  
+  
+} 
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Styles de la section des fonctionnalités */
+  .features {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  }
+  
+  .feature-item {
+  flex: 1;
+  padding: 1px;
+  background-color: #ff5100;
+  color: #ffffff;
+  text-align: center;
+  border-right: 1px solid #060505; /* Ligne rouge de 3px */
+  margin-top: 58px;
+  }
+  
+  .feature-item h2 {
+  font-family:"Aznauri Square", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  }
+  
+  .feature-item p {
+  font-family: "Aznauri Square", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 15px;
+  }
+  
+  .read-more {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  color: #ff5100;
+  text-decoration: none;
+  font-family:"Aznauri Square", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  }
+  
+  .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  flex: 1;
+  }
+  
+  .feature-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: #ffffff;
+  border-top: 1px solid #060505; /* Ligne rouge de 3px */
+
+  padding: 15px;
+  padding-bottom: 25px;
+  margin-top: 58px;
+  
+  
+  }
+  
+  .feature-boxdark {
+  background-color: #000000;
+  color: #ffffff;
+  border-bottom : 1px solid #060505; /* Ligne rouge de 3px */
+  border-top: 1px solid #060505; /* Ligne rouge de 3px */
+  border-left: 1px solid #060505; /* Ligne rouge de 3px */
+  border-right: 1px solid #060505; /* Ligne rouge de 3px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: #ff5100;
+  padding: 15px;
+  padding-bottom: 58px;
+  margin-top: 58px;
+  margin-left: -20px;
+  
+  }
+
+  .feature-box1{
+  border-bottom : 1px solid #060505; /* Ligne rouge de 3px */
+  border-top: 1px solid #060505; /* Ligne rouge de 3px */
+  border-right: 1px solid #060505; /* Ligne rouge de 3px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: #ff5100;
+  padding: 15px;
+  padding-bottom: 25px;
+  margin-bottom: -3px;
+  
+ 
+
+}
+  .feature-box h3 {
+  font-family: "Aznauri Square", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  }
+  
+  /* Styles de la section des blocs d'information */
+  .info-blocks {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  }
+  
+  .info-block {
+  flex: 1;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  }
+  
+  .block-number {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Aznauri Square", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: rgba(0, 0, 0, 0.26);
+  }
+  
+  .info-block p {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 60px;
+  }
+  
+  
+  
+  /* Styles du pied de page */
+  .main-footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 40px 0;
+  }
+  
+  .footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  
+  .contact-info {
+  font-family: "Aznauri Square", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  }
+  
+  .footer-description {
+  font-family: "Aznauri Square", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 800px;
+  text-align: right;
+  }
+  
+
+  @media (max-width: 1024px) {  
+    .hero {  
+      flex-direction: column;  
+      align-items: center;  
+      text-align: center;  
+    }  
+  
+    .hero-image {  
+      position: static;  
+      width: 100%;  
+      max-width: 500px;  
+      margin-top: 150px;  
+     margin-bottom: 250px;
+    }  
+  }
+   /* Pour tous les liens cliquables */
+a:hover {
+  color: #ff5100; /* Changer la couleur de texte */
+  text-decoration: underline; /* Ajouter un soulignement au survol */
+}
+
+/* Pour les boutons */
+.cta-button:hover {
+  background-color: #f5ab88; /* Couleur de fond au survol */
+  color: #ffffff; /* Couleur du texte au survol */
+  border-color: #632305; /* Couleur de la bordure au survol */
+}
+
+/* Pour les items du modal */
+.modal-item:hover {
+  background-color: #f0f0f0; /* Changer la couleur de fond du modal au survol */
+}
+
+/* Pour les éléments de la grid de fonctionnalités */
+.feature-box:hover,
+.feature-boxdark:hover,
+.feature-box1:hover,
+.feature-box2:hover {
+  background-color: #d8a58e; /* Changer la couleur de fond au survol */
+  color: #ffffff; /* Changer la couleur du texte */
+}
+
+/* Pour les éléments du footer */
+.main-footer a:hover {
+  color: #ff5100; /* Changer la couleur des liens du footer au survol */
+}
+
+/* Pour les éléments de la barre de navigation */
+.main-nav a:hover {
+  color: #632305; /* Changer la couleur de texte des liens de navigation au survol */
+}

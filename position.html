@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <link rel="stylesheet" href="gloplani.css" />
+    <link rel="stylesheet" href="position.css" />
+
+    
+  </head>
+  <body>
+    
+    <div class="slide">
+      <main class="main-content">
+       <!-- En-tête avec navigation et actions utilisateur -->
+<header class="header">
+  <div class="header-content">
+    <div class="main-nav">
+      <ul>
+        <li><a href="essai.html">Accueil</a></li>
+        <li><a href="planifier.html">Planifier un RDV</a></li>
+        <li><a href="Ticket.html">Mes tickets</a></li>
+      </ul>
+    </div>
+    <div class="user-actions">
+      <button class="notification-btn" aria-label="Notifications">
+        <img
+          src="https://c.animaapp.com/usgQnJ8S/img/---icon--bell--1@2x.png"
+          alt="Icône de cloche"
+          width="36"
+          height="36"
+        />
+        <span class="notification-count" aria-label="3 notifications">3</span>
+      </button>
+        <!-- Icône de profil -->
+    <div class="relative">
+      <a href="#" id="profileIcon" class="account-link" aria-label="Compte utilisateur">
+          <img src="https://c.animaapp.com/usgQnJ8S/img/account.svg" alt="Icône de compte" width="60" height="60" />
+      </a>
+      
+      <!-- Modal -->
+      <div id="profileModal" class="modal hidden">
+          <ul>
+              <li class="modal-item">Mon Profil</li>
+              <li class="modal-item">Paramètres</li>
+              <li class="modal-item">Déconnexion</li>
+          </ul>
+      </div>
+  </div>
+    </div>
+  </div>
+  <form class="search-form" role="search">
+    <input type="search" placeholder="effectuer une recherche" aria-label="Recherche" />
+    <button type="submit" aria-label="Soumettre la recherche">
+      <img
+        src="https://c.animaapp.com/usgQnJ8S/img/group-1@2x.png"
+        alt="Icône de recherche"
+        width="29"
+        height="29"
+      />
+    </button>
+  </form>
+</header>
+
+<!-- Section Statistiques en temps réel -->
+<section class="queue-status">
+  <h2>Position dans la file</h2>
+  <table class="queue-table">
+      <tr>
+          <th>Votre Position</th>
+          <th>Personnes en Attente</th>
+          <th>Temps d'Attente Estimé</th>
+      </tr>
+      <tr>
+          <td id="user-position">5</td>
+          <td id="waiting-count">15</td>
+          <td id="waiting-time">20 min</td>
+      </tr>
+  </table>
+  <button class="refresh-btn" onclick="refreshQueue()">Actualiser</button>
+</section>
+
+
+<script>
+  function refreshQueue() {
+      location.reload(); // Recharge la page pour mettre à jour la file d'attente
+  }
+</script>
+
+
+   <!-- Pied de page avec coordonnées et description -->
+        <footer class="main-footer">
+          <div class="footer-content">
+            <div class="contact-info">
+              <p>Corporight lmo@ 225</p>
+              <p>filed'attente@gmail.com</p>
+              <p>+225 00 00 00 00 00/00 00 00 00 00</p>
+            </div>
+            <p class="footer-description">
+              Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
+              tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+            </p>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script defer src="position.js"></script>
+
+  </body>
+</html>

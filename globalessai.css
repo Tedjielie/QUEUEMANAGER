@@ -1,0 +1,181 @@
+
+@font-face {
+  font-family: 'Aznauri Square';
+  src: url('../Monblog/Fonts/AznauriRoundBold.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aznauri Square';
+  src: url('../Monblog/Fonts/AznauriSquareBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+h1 {
+  font-family: "Aznauri Square", Helvetica, sans-serif;
+}
+
+
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Aznauri Square", Helvetica, sans-serif;
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+/* Accessibility improvements */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* Focus styles for keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+/* Skip to main content link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000000;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 60px;
+    margin-left: 10%;
+  }
+
+  .cta-buttons {
+    margin-left: 10%;
+  }
+
+  .hero-image {
+    max-width: 50%;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    margin-left: 0;
+  }
+
+  .hero-image {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .features,
+  .info-blocks {
+    flex-direction: column;
+  }
+
+  .feature-item,
+  .info-block {
+    max-width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .hero h1, 
+  .welcome-text, 
+  .cta-buttons {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+
+/* Assurer que les liens prennent toute la place et restent cliquables */
+.feature-grid a {
+  display: block; /* S'assure que le lien prend toute la surface */
+  width: 100%;
+  height: 100%;
+}
+
+/* Ajuster les boîtes pour s'assurer qu'elles sont bien cliquables */
+.feature-box, 
+.feature-boxdark, 
+.feature-box1, 
+.feature-box2 {
+  position: relative; /* Évite que d'autres éléments ne passent dessus */
+  z-index: 10; /* S'assure que ces blocs restent au-dessus */
+  cursor: pointer;
+}
+
+/* Teste aussi cette règle pour s'assurer que rien ne cache les liens */
+.feature-grid {
+  position: relative; /* Évite tout écrasement */
+  z-index: 10;
+}
+
+/* Ajout d'un effet visuel au clic */
+.feature-box:active,
+.feature-boxdark:active,
+.feature-box1:active,
+.feature-box2:active {
+  transform: scale(0.98); /* Effet léger au clic */
+}
+
+

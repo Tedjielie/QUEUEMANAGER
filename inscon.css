@@ -1,0 +1,157 @@
+
+  
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajustez l'opacité et la couleur ici */
+    z-index: -1;
+  }
+  h1 {
+    margin: 0;
+    padding: 10px;
+    color: #ffffff;
+  }
+   
+  .body1 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('image/aze.jpg') no-repeat center center fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+  
+  
+  
+  .welcome-text {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .welcome-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-text p {
+    font-size: 1rem;
+  }
+  
+  .auth-container {
+    width: 350px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-container {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #dad6d6;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    background-color: #fa3f06;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #df7b5d;
+  }
+  
+  p {
+    margin-top: 10px;
+    
+  }
+  
+  a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    border: 1px solid white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  th {
+    background-color: rgba(255, 255, 255, 0.826);
+    font-weight: bold;
+    color: #fa3f06;
+  }
+  
+  td {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f1e9e9;
+  }
+  
+ 
+  
+  
+  /* Conteneur principal inscription */
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Texte d'accueil */
+  .welcome-text {
+    width: 40%;
+    text-align: center;
+  }
+  
+  /* Conteneur des formulaires */
+  .auth-container {
+    width: 50%;
+  }
+  
+  
